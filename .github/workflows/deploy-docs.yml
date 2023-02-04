@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build Storybook static files  
-        run: build storybook
+        run: npm run build storybook
 
       - name: Deploy Storybook
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
